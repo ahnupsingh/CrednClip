@@ -8,6 +8,7 @@ Copy 'cred' file to your home folder
 cp cred ~/cred
 ```
 
+Open and edit bashrc file with your favourite text editor
 ```
 nano ~/.bashrc
 ```
@@ -29,5 +30,9 @@ source ~/.bashrc
 Use cred command to get all the contents inside 'Title1' title
 ```
 cred Title1
+```
+Update cred file using
+```
+nano ~/cred
 ```
 
