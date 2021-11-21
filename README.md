@@ -42,6 +42,10 @@ Paste following code to end of the file
 function cred() {
     sed -n "/$1/,/$1/p" ~/cred
 }
+
+function clip() {
+    grep "$1 :" cred | sed 's/^.*: //' | pbcopy
+}
 ```
 Save and exit
 
@@ -56,6 +60,13 @@ Use cred command to get all the contents inside 'Title1' title
 ```
 cred Title1
 ```
+
+Use clip command to copy your credential corresponding to your given key.
+```
+clip github
+```
+Paste copied credentials anywhere you need to.
+
 Update cred file using
 ```
 nano ~/cred
