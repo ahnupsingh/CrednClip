@@ -36,6 +36,7 @@ Create your new file
 touch .bash_profile
 ```
 Edit .bash_profile with your favorite editor (or you can just type open -e .bash_profile to open it in TextEdit).
+
 Paste following code to end of the file
 ```
 function cred() {
@@ -43,6 +44,7 @@ function cred() {
 }
 ```
 Save and exit
+
 Reload your bash profile and update any alias you add.
 ```
 . .bash_profile
